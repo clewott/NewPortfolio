@@ -5,10 +5,58 @@ $(document).ready( function() {
       $(this).children('.projectImage').addClass("coolEffect");
       $(this).children('.hiddenH3').addClass("showBtn");
     });
-    
+
     $('.image').on("mouseout", function() {
       $(this).children('.projectImage').removeClass("coolEffect");
       $(this).children('.hiddenH3').removeClass("showBtn");
+    });
+
+    $("#myWork").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#portfolio").offset().top
+      }, 1500);
+    });
+
+    $(function()  {
+        $("#contact_form").submit(function()
+        {
+            var email = $("#email").val();
+            var name = $("#name").val();
+            var msg = $("#msg").val();
+            $.ajax(
+            {
+                type: "POST",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                data: {
+                    'key': '7Pqu14g1dHHI5lh8yIfQsw',
+                    'message': {
+                        'from_email': email,
+                        'from_name': name,
+                        'headers': {
+                            'Reply-To': email
+                        },
+                        'subject': 'Message From Your Portfolio',
+                        'text': msg,
+                        'to': [
+                        {
+                            'email': 'Christopher.R.Otten@gmail.com',
+                            'name': 'Chris Otten',
+                            'type': 'to'
+                        }]
+                    }
+                }
+            })
+            .done(function(response) {
+                alert('Your message has been sent. Thank you!');
+                $("#name").val('');
+                $("#email").val('');
+                $("#msg").val('');
+            })
+            .fail(function(response) {
+                alert('Error sending message.');
+            });
+            return false;
+        });
     });
 
   $(window).on('resize load', function() {
