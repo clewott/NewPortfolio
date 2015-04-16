@@ -78,9 +78,9 @@ $(document).ready( function() {
 
 
   var images = [
-      "../images/book2.jpg",
-      "../images/book.jpg",
-      "../images/desk.jpg"
+      "/images/book2.jpg",
+      "/images/book.jpg",
+      "/images/desk.jpg"
   ];
   var $body = $(".intro"),
       $bg = $("#bg"),
