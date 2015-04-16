@@ -26,7 +26,7 @@ body, html {
     margin-left: auto;
     font-size: 5em;
     font-weight: bold;
-    background-color: rgba(184, 175, 161, 0.5);
+    background-color: rgba(242, 232, 223, 0.5);
     max-width: 90%;
     border-radius: 10px; }
   body .intro h2, html .intro h2 {
@@ -34,7 +34,7 @@ body, html {
     margin: 0 auto;
     font-size: 2.5em;
     margin-bottom: 30px;
-    background-color: rgba(184, 175, 161, 0.5);
+    background-color: rgba(242, 232, 223, 0.5);
     border-radius: 10px; }
   body .intro a, html .intro a {
     color: #fff;
@@ -54,7 +54,7 @@ body, html {
       background-color: #2c3e50;
       border: 1px solid #2c3e50; }
   body .portfolio, html .portfolio {
-    background-color: #6BB4B5;
+    background-color: #D9C3B0;
     color: #2C3E50; }
     body .portfolio h2, html .portfolio h2 {
       margin-left: 10px;
@@ -127,7 +127,8 @@ body, html {
       margin-left: 10px;
       font-size: 2.5em;
       text-decoration: underline;
-      text-align: left; }
+      text-align: left;
+      color: #F2E8DF; }
   body #logoImage, html #logoImage {
     position: absolute;
     left: 10px;
@@ -174,42 +175,42 @@ body, html {
       font-size: 24px; }
   body .break, html .break {
     height: 300px; }
-  body #about .aboutMe, html #about .aboutMe {
-    text-align: center; }
-    body #about .aboutMe h2, html #about .aboutMe h2 {
+  body #about, html #about {
+    color: #F2E8DF; }
+    body #about h2, html #about h2 {
       text-align: left;
       font-size: 2.5em;
       text-decoration: underline; }
-    body #about .aboutMe p, html #about .aboutMe p {
+    body #about p, html #about p {
       max-width: 700px;
       margin: 20px auto;
       font-size: 20px;
       text-align: left; }
       @media (max-width: 600px) {
-        body #about .aboutMe p, html #about .aboutMe p {
+        body #about p, html #about p {
           font-size: 16px; } }
-      body #about .aboutMe p a, html #about .aboutMe p a {
-        color: #1E81B4;
+      body #about p a, html #about p a {
+        color: #464646;
         font-size: 20px; }
         @media (max-width: 600px) {
-          body #about .aboutMe p a, html #about .aboutMe p a {
+          body #about p a, html #about p a {
             font-size: 16px; } }
-      body #about .aboutMe p a:hover, html #about .aboutMe p a:hover {
-        color: #2c3e50; }
-    body #about .aboutMe a, html #about .aboutMe a {
+      body #about p a:hover, html #about p a:hover {
+        color: #F2E8DF; }
+    body #about a, html #about a {
       color: #fff;
       font-size: 1.5em;
       font-weight: normal;
       text-decoration: none; }
-      body #about .aboutMe a button, html #about .aboutMe a button {
+      body #about a button, html #about a button {
         transition: all 0.3s ease-in;
         background-color: #1E81B4;
         border: 1px solid #1E81B4;
         margin-bottom: 30px;
         padding: 15px; }
-        body #about .aboutMe a button span, html #about .aboutMe a button span {
+        body #about a button span, html #about a button span {
           margin-left: 20px; }
-    body #about .aboutMe button:hover, html #about .aboutMe button:hover {
+    body #about button:hover, html #about button:hover {
       transition: all 0.3s ease-in;
       background-color: #2c3e50;
       border: 1px solid #2c3e50; }
@@ -239,10 +240,33 @@ body, html {
       margin-top: 0px;
       color: black;
       font-size: 1em; }
-  body footer, html footer {
-    text-align: center; }
-    body footer .mainContact, html footer .mainContact {
-      font-size: 1.5em; }
+  body .mainFooter, html .mainFooter {
+    min-height: 150px;
+    background-color: #464646;
+    color: #BEBEBE; }
+    body .mainFooter .leftFooter, html .mainFooter .leftFooter {
+      color: #BEBEBE;
+      margin-top: 45px; }
+    body .mainFooter .rightFooter ul li, html .mainFooter .rightFooter ul li {
+      list-style-type: none;
+      display: inline-block;
+      font-size: 2em;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      margin-top: 50px; }
+      body .mainFooter .rightFooter ul li a, html .mainFooter .rightFooter ul li a {
+        color: #BEBEBE; }
+    body .mainFooter .rightFooter ul .email:hover, html .mainFooter .rightFooter ul .email:hover {
+      background-color: #C92228; }
+    body .mainFooter .rightFooter ul .phone:hover, html .mainFooter .rightFooter ul .phone:hover {
+      background-color: #327344; }
+    body .mainFooter .rightFooter ul .github:hover, html .mainFooter .rightFooter ul .github:hover {
+      background-color: #333333; }
+    body .mainFooter .rightFooter ul .linkedin:hover, html .mainFooter .rightFooter ul .linkedin:hover {
+      background-color: #0077B5; }
+    body .mainFooter .rightFooter ul .twitter:hover, html .mainFooter .rightFooter ul .twitter:hover {
+      background-color: #55ACEE; }
 
 .coolEffect {
   transition: all 0.5s ease-in;
