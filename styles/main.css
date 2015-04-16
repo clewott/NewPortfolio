@@ -1,0 +1,250 @@
+body, html {
+  font-family: 'Cabin', sans-serif;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  /* #page{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpiZGBg6GGAgEUggokBDTACsR6yAIYKgAADAE0GAWM9RhAyAAAAAElFTkSuQmCC);
+  } */ }
+  body .header, html .header {
+    background: #000;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3; }
+  body .no-js body, html .no-js body {
+    opacity: 0; }
+  body *, body *:before, body *:after, html *, html *:before, html *:after {
+    box-sizing: border-box; }
+  body .splash, html .splash {
+    width: 100%;
+    position: relative;
+    display: table;
+    /* for vertical alignment */ }
+  body .intro h1, html .intro h1 {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 5em;
+    font-weight: bold;
+    background-color: rgba(184, 175, 161, 0.5);
+    max-width: 90%;
+    border-radius: 10px; }
+  body .intro h2, html .intro h2 {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    background-color: rgba(184, 175, 161, 0.5);
+    border-radius: 10px; }
+  body .intro a, html .intro a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: none; }
+    body .intro a button, html .intro a button {
+      transition: all 0.3s ease-in;
+      background-color: #1E81B4;
+      border: 1px solid #1E81B4;
+      margin-bottom: 10px;
+      padding: 15px; }
+      body .intro a button span, html .intro a button span {
+        margin-left: 20px; }
+    body .intro a button:hover, html .intro a button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50; }
+  body .portfolio, html .portfolio {
+    background-color: #6BB4B5;
+    color: #2C3E50; }
+    body .portfolio h2, html .portfolio h2 {
+      margin-left: 10px;
+      font-size: 2.5em;
+      text-decoration: underline;
+      text-align: left; }
+    body .portfolio .eachProject, html .portfolio .eachProject {
+      text-align: center; }
+      body .portfolio .eachProject h4 span, html .portfolio .eachProject h4 span {
+        font-size: 13px;
+        font-weight: normal; }
+      body .portfolio .eachProject .image, html .portfolio .eachProject .image {
+        position: relative;
+        width: 100%; }
+        body .portfolio .eachProject .image .projectImage, html .portfolio .eachProject .image .projectImage {
+          width: 100%;
+          transition: all 0.5s ease-in; }
+        body .portfolio .eachProject .image .hiddenH3, html .portfolio .eachProject .image .hiddenH3 {
+          transition: all 0.5s ease-in;
+          opacity: 0;
+          position: absolute;
+          border-radius: 5px;
+          top: 50%;
+          width: 80%;
+          font-size: 2.5em;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          margin-top: -24px;
+          background-color: #1E81B4;
+          border: 1px solid #1E81B4;
+          color: white; }
+          body .portfolio .eachProject .image .hiddenH3 a, html .portfolio .eachProject .image .hiddenH3 a {
+            color: white;
+            text-decoration: none; }
+        body .portfolio .eachProject .image .showBtn, html .portfolio .eachProject .image .showBtn {
+          transition: all 0.5s ease-in;
+          opacity: 1; }
+        body .portfolio .eachProject .image .showBtn:hover, html .portfolio .eachProject .image .showBtn:hover {
+          transition: all 0.5s ease-in;
+          background-color: #2c3e50;
+          border: 1px solid #2c3e50; }
+      body .portfolio .eachProject nav, html .portfolio .eachProject nav {
+        margin-top: 10px;
+        font-size: 1em; }
+        body .portfolio .eachProject nav a, html .portfolio .eachProject nav a {
+          color: white; }
+        body .portfolio .eachProject nav a:hover, html .portfolio .eachProject nav a:hover {
+          color: #464646; }
+      body .portfolio .eachProject p, html .portfolio .eachProject p {
+        margin-top: 5px; }
+  body .contact, html .contact {
+    background-color: teal;
+    padding-top: 0px; }
+  body .content, html .content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    z-index: 1; }
+  body .contactContent, html .contactContent {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    position: relative;
+    z-index: 1; }
+    body .contactContent h2, html .contactContent h2 {
+      margin-left: 10px;
+      font-size: 2.5em;
+      text-decoration: underline;
+      text-align: left; }
+  body #logoImage, html #logoImage {
+    position: absolute;
+    left: 10px;
+    top: 10px; }
+  body #welcomeText, html #welcomeText {
+    margin-top: 0px; }
+  body nav ul, html nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0%;
+    /*removes extra spacing */ }
+  body nav ul li, html nav ul li {
+    display: inline-block;
+    font-size: 16px; }
+  body nav ul li a, html nav ul li a {
+    padding: 5px; }
+  body footer, html footer {
+    background: #444;
+    padding: 20px;
+    clear: both; }
+  body .splash.intro, body #bg, html .splash.intro, html #bg {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  body #bg, body #page, html #bg, html #page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+  body .drawer-default, html .drawer-default {
+    background-color: #EEE; }
+    body .drawer-default .drawer-menu-item a, html .drawer-default .drawer-menu-item a {
+      color: #1E81B4; }
+    body .drawer-default .drawer-menu-item a:hover, html .drawer-default .drawer-menu-item a:hover {
+      color: #333;
+      text-decoration: none; }
+    body .drawer-default .largerFont, html .drawer-default .largerFont {
+      font-size: 24px; }
+  body .break, html .break {
+    height: 300px; }
+  body #about .aboutMe, html #about .aboutMe {
+    text-align: center; }
+    body #about .aboutMe h2, html #about .aboutMe h2 {
+      text-align: left;
+      font-size: 2.5em;
+      text-decoration: underline; }
+    body #about .aboutMe p, html #about .aboutMe p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 20px;
+      text-align: left; }
+      @media (max-width: 600px) {
+        body #about .aboutMe p, html #about .aboutMe p {
+          font-size: 16px; } }
+      body #about .aboutMe p a, html #about .aboutMe p a {
+        color: #1E81B4;
+        font-size: 20px; }
+        @media (max-width: 600px) {
+          body #about .aboutMe p a, html #about .aboutMe p a {
+            font-size: 16px; } }
+      body #about .aboutMe p a:hover, html #about .aboutMe p a:hover {
+        color: #2c3e50; }
+    body #about .aboutMe a, html #about .aboutMe a {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-decoration: none; }
+      body #about .aboutMe a button, html #about .aboutMe a button {
+        transition: all 0.3s ease-in;
+        background-color: #1E81B4;
+        border: 1px solid #1E81B4;
+        margin-bottom: 30px;
+        padding: 15px; }
+        body #about .aboutMe a button span, html #about .aboutMe a button span {
+          margin-left: 20px; }
+    body #about .aboutMe button:hover, html #about .aboutMe button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50; }
+  body .print, html .print {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px; }
+    body .print button, html .print button {
+      padding: 10px;
+      background-color: #1E81B4;
+      border: 1px solid #1E81B4;
+      color: white;
+      transition: all 0.3s ease-in; }
+    body .print button:hover, html .print button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50; }
+  body .WordSection1, html .WordSection1 {
+    max-width: 700px;
+    margin: 20px auto; }
+    body .WordSection1 h2, html .WordSection1 h2 {
+      text-align: center;
+      font-size: 3em; }
+    body .WordSection1 h4, html .WordSection1 h4 {
+      text-align: center;
+      margin-top: 0px;
+      color: black;
+      font-size: 1em; }
+  body footer, html footer {
+    text-align: center; }
+    body footer .mainContact, html footer .mainContact {
+      font-size: 1.5em; }
+
+.coolEffect {
+  transition: all 0.5s ease-in;
+  opacity: 0.4;
+  border-radius: 100%; }
