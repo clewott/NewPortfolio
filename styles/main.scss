@@ -37,9 +37,17 @@ body, html {
       font-size: 5em;
       font-weight: bold;
       color: #FFF;
-      /* background-color: rgba(242,232,223,0.5); */
       max-width: 90%;
       border-radius: 10px;
+      @media(max-width: 605px) {
+        font-size: 4em;
+      }
+      @media(max-width: 480px) {
+        font-size: 3em;
+      }
+      @media(max-width: 442px) {
+        font-size: 2.5em;
+      }
     }
     h2 {
       max-width: 700px;
@@ -47,8 +55,16 @@ body, html {
       font-size: 2.5em;
       margin-bottom: 30px;
       color: #FFF;
-      /* background-color: rgba(242,232,223,0.5); */
       border-radius: 10px;
+      @media(max-width: 605px) {
+        font-size: 2em;
+      }
+      @media(max-width: 480px) {
+        font-size: 1.8em;
+      }
+      @media(max-width: 442px) {
+        font-size: 1.5em;
+      }
     }
     a {
       color: #fff;
@@ -154,21 +170,6 @@ body, html {
       z-index: 1;
   }
 
-  .contactContent {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    position: relative;
-    z-index: 1;
-    h2 {
-      margin-left: 10px;
-      font-size: 2.5em;
-      text-decoration: underline;
-      text-align: left;
-      color: #F2E8DF;
-    }
-  }
-
   #logoImage {
     position: absolute;
     left: 10px;
@@ -232,7 +233,11 @@ body, html {
     }
   }
 
-  .break {
+  .drawer-hamburger {
+    z-index: 10;
+  }
+
+  .aboutMePictures {
     .content {
       padding: 0px;
     }
@@ -247,7 +252,7 @@ body, html {
     }
   }
   @media(max-width: 1160px) {
-    .break {
+    .aboutMePictures {
       display: none;
     }
   }
@@ -293,7 +298,7 @@ body, html {
             margin-left: 20px;
         }
       }
-  }
+    }
       button:hover {
         transition: all 0.3s ease-in;
         background-color: #2c3e50;
@@ -301,16 +306,52 @@ body, html {
       }
   }
 
+  .contactContent {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    position: relative;
+    z-index: 1;
+    h2 {
+      margin-left: 10px;
+      font-size: 2.5em;
+      text-decoration: underline;
+      text-align: left;
+      color: #F2E8DF;
+      margin-top: 0px;
+      padding-top: 10px;
+    }
+    #lastP {
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+  }
+
   .mainFooter {
     min-height: 150px;
     background-color: #464646;
     color: #BEBEBE;
+    @media(max-width: 376px) {
+      min-height: 160px;
+    }
     .leftFooter {
       color: #BEBEBE;
       margin-top: 45px;
+      @media(max-width: 991px) {
+        margin-top: 20px;
+        text-align: center;
+      }
+      @media(max-width: 376px) {
+        margin-top: 10px;
+      }
     }
     .rightFooter {
-      ul li {
+      ul {
+        @media(max-width: 991px) {
+          padding-left: 0px;
+          text-align: center;
+        }
+        li {
         list-style-type: none;
         display: inline-block;
         font-size: 2em;
@@ -318,39 +359,43 @@ body, html {
         height: 40px;
         text-align: center;
         margin-top: 50px;
-        a {
-          color: #BEBEBE;
+        @media(max-width: 991px) {
+          margin-top: 0px;
         }
-      }
-      ul .email:hover {
-        background-color: #C92228;
-        a {
+          a {
+            color: #BEBEBE;
+          }
+        }
+        .email:hover {
+          background-color: #C92228;
+          a {
 
+          }
         }
-      }
-      ul .phone:hover {
-        background-color: #327344;
-        a {
+        .phone:hover {
+          background-color: #327344;
+          a {
 
+          }
         }
-      }
-      ul .github:hover {
-        background-color: #333333;
-        a {
+        .github:hover {
+          background-color: #333333;
+          a {
 
+          }
         }
-      }
-      ul .linkedin:hover {
-        background-color: #0077B5;
-        a {
+        .linkedin:hover {
+          background-color: #0077B5;
+          a {
 
+          }
         }
-      }
-      ul .twitter:hover {
-        background-color: #55ACEE;
-        transform: translate(0,50);
-        a {
+        .twitter:hover {
+          background-color: #55ACEE;
           transform: translate(0,50);
+          a {
+            transform: translate(0,50);
+          }
         }
       }
     }
