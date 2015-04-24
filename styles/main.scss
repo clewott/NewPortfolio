@@ -359,6 +359,7 @@ body, html {
         height: 40px;
         text-align: center;
         margin-top: 50px;
+        transition: all 0.5s ease;
         @media(max-width: 991px) {
           margin-top: 0px;
         }
@@ -368,34 +369,23 @@ body, html {
         }
         .email:hover {
           background-color: #C92228;
-          a {
-
-          }
+          transition: all 0.3s ease;
         }
         .phone:hover {
           background-color: #327344;
-          a {
-
-          }
+          transition: all 0.3s ease;
         }
         .github:hover {
           background-color: #333333;
-          a {
-
-          }
+          transition: all 0.3s ease;
         }
         .linkedin:hover {
           background-color: #0077B5;
-          a {
-
-          }
+          transition: all 0.3s ease;
         }
         .twitter:hover {
           background-color: #55ACEE;
-          transform: translate(0,50);
-          a {
-            transform: translate(0,50);
-          }
+          transition: all 0.3s ease;
         }
       }
     }

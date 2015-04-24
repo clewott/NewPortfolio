@@ -281,25 +281,28 @@ body, html {
       width: 40px;
       height: 40px;
       text-align: center;
-      margin-top: 50px; }
+      margin-top: 50px;
+      transition: all 0.5s ease; }
       @media (max-width: 991px) {
         body .mainFooter .rightFooter ul li, html .mainFooter .rightFooter ul li {
           margin-top: 0px; } }
       body .mainFooter .rightFooter ul li a, html .mainFooter .rightFooter ul li a {
         color: #BEBEBE; }
     body .mainFooter .rightFooter ul .email:hover, html .mainFooter .rightFooter ul .email:hover {
-      background-color: #C92228; }
+      background-color: #C92228;
+      transition: all 0.3s ease; }
     body .mainFooter .rightFooter ul .phone:hover, html .mainFooter .rightFooter ul .phone:hover {
-      background-color: #327344; }
+      background-color: #327344;
+      transition: all 0.3s ease; }
     body .mainFooter .rightFooter ul .github:hover, html .mainFooter .rightFooter ul .github:hover {
-      background-color: #333333; }
+      background-color: #333333;
+      transition: all 0.3s ease; }
     body .mainFooter .rightFooter ul .linkedin:hover, html .mainFooter .rightFooter ul .linkedin:hover {
-      background-color: #0077B5; }
+      background-color: #0077B5;
+      transition: all 0.3s ease; }
     body .mainFooter .rightFooter ul .twitter:hover, html .mainFooter .rightFooter ul .twitter:hover {
       background-color: #55ACEE;
-      transform: translate(0, 50); }
-      body .mainFooter .rightFooter ul .twitter:hover a, html .mainFooter .rightFooter ul .twitter:hover a {
-        transform: translate(0, 50); }
+      transition: all 0.3s ease; }
 
 .coolEffect {
   transition: all 0.5s ease-in;
