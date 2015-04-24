@@ -81,7 +81,9 @@ body, html {
       text-decoration: underline;
       text-align: left; }
     body .portfolio .eachProject, html .portfolio .eachProject {
-      text-align: center; }
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
       body .portfolio .eachProject h4 span, html .portfolio .eachProject h4 span {
         font-size: 13px;
         font-weight: normal; }
